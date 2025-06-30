@@ -13,6 +13,12 @@ app.get('/', (req, res) => {
 res.send('a');
 })
 
+app.post('/library', (req, res) => {
+const firstname = req.body.firstname
+const lastname = req.body.lastname
+res.json({name: firstname+' '+lastname});
+})
+
 
 
 
