@@ -13,11 +13,11 @@ app.get('/', (req, res) => {
 res.send('a');
 })
 
-app.post('/name', (req, res) => {
-const firstname = req.body.first
-const lastname = req.body.last
-res.json({name: firstname+' '+lastname});
-})
+app.post("/name", function(req, res) {
+  // Handle the data in the request
+  var string = req.body.first + " " + req.body.last;
+  res.json({ name: string });
+});
 
 
 
