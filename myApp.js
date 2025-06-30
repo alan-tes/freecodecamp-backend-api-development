@@ -7,6 +7,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use(bodyParser.json());
 
+console.log('a');
+
 app.get('/', (req, res) => {
 res.send('a');
 })
