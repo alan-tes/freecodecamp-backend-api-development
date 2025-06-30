@@ -14,8 +14,8 @@ res.send('a');
 })
 
 app.post('/library', (req, res) => {
-const firstname = req.body.firstname
-const lastname = req.body.lastname
+const firstname = req.body.first
+const lastname = req.body.last
 res.json({name: firstname+' '+lastname});
 })
 
