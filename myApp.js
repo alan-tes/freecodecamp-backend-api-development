@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 res.send('a');
 })
 
-app.post('/library', (req, res) => {
+app.post('/name', (req, res) => {
 const firstname = req.body.first
 const lastname = req.body.last
 res.json({name: firstname+' '+lastname});
