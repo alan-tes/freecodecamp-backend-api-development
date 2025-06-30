@@ -9,15 +9,16 @@ app.use(bodyParser.json());
 
 console.log('a');
 
-app.get('/', (req, res) => {
-res.send('a');
-})
-
 app.post("/name", function(req, res) {
   // Handle the data in the request
   var string = req.body.first + " " + req.body.last;
   res.json({ name: string });
 });
+
+app.get('/', (req, res) => {
+res.send('a');
+})
+
 
 
 
